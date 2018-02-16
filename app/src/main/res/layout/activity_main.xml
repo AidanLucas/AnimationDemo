@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.example.flinganimationdemo.MainActivity">
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sentiment_neutral_black_56dp"
+        android:id="@+id/neutral"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/neutral"
+        android:layout_below="@+id/neutral"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/ic_sentiment_very_satisfied_black_56dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fling"
+        android:id="@+id/flinger"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="flingIt"/>
+
+    <Button
+        android:id="@+id/fliper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/displaySpring"
+        android:onClick="flipIt"
+        android:text="@string/Flip" />
+
+    <Button
+        android:id="@+id/displaySpring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="displaySpringAnimation"
+        android:text="@string/Spring" />
+
+</RelativeLayout>

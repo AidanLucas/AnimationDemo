@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FlingAnimationDemo</string>
+    <string name="Fling">Fling</string>
+    <string name="Flip">Flip</string>
+    <string name="Spring">Spring Animation</string>
+    <string name="Bounce">Bounce</string>
+</resources>
